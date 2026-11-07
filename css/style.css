@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  font-family: sans-serif;
+}
+.container {
+  max-width: 1040px;
+  display: flex;
+}
+.welcome {
+  background-color: #7c5cff;
+  width: 50%;
+  padding: 52px;
+  color: #fff;
+}
+.logo {
+  display: block;
+  margin-bottom: 40px;
+}
+.welcome__title {
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.welcome__description {
+  font-size: 20px;
+}
+.right {
+  background-color: #10162e;
+  padding: 52px;
+  color: #fff;
+  width: 50%;
+}
+.right__title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.right__description {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.form-group__label {
+  font-size: 12px;
+  color: #c9d1ff;
+}
+.form-input {
+  padding: 17.5px 16px;
+  background-color: #1b2344;
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+}
+.form-input::placeholder {
+  color: #fff;
+}
+.form-group--big {
+  grid-column: span 2;
+}
+.checkbox-label {
+  font-size: 12px;
+  color: #b9e3ff;
+}
+.form-group-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.checkbox-input {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #b9e3ff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  overflow: hidden;
+}
+.checkbox-input:checked {
+  background-color: #1b2344;
+}
+.checkbox-input::after {
+  content: "✔";
+  display: block;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  opacity: 0;
+  transform: scale(0.1);
+  transition:
+    opacity 0.2s,
+    transform 0.2s;
+}
+.checkbox-input:checked::after {
+  opacity: 1;
+  transform: scale(1);
+}
+.form-btn-right {
+  text-align: right;
+}
+.form-btn-center {
+  text-align: center;
+}
+.form-forget-password {
+  color: #b9e3ff;
+  background-color: transparent;
+  border: none;
+  font-size: 12px;
+  margin-right: auto;
+}
+.form-enter {
+  background-color: #17b79a;
+  color: #fff;
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+}
+.form-new-account {
+  font-size: 12px;
+  color: #9ea9d6;
+  background-color: transparent;
+  border: none;
+  margin: 0 auto;
+}

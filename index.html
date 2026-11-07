@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Форма входа</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="welcome">
+        <a href="/" class="logo">
+          <img src="img/logo.svg" alt="Логотип" />
+        </a>
+        <h1 class="welcome__title">Добро пожаловать обратно</h1>
+        <p class="welcome__description">
+          Продолжите обучение, отслеживайте прогресс и открывайте новые
+          практические задания.
+        </p>
+      </div>
+      <div class="right">
+        <h2 class="right__title">Вход в систему</h2>
+        <p class="right__description">
+          Используйте электронную почту и пароль.
+        </p>
+        <form action="" class="form">
+          <div class="form-group form-group--big">
+            <label for="email" class="form-group__label"
+              >Электронная почта</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-input"
+              placeholder="ivan@example.com"
+              required
+            />
+          </div>
+          <div class="form-group form-group--big">
+            <label for="password" class="form-group__label">Пароль</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="form-input password-input"
+              placeholder="••••••••"
+              required
+            />
+          </div>
+          <div class="form-group-checkbox">
+            <input
+              type="checkbox"
+              id="subscribe"
+              name="subscribe"
+              class="checkbox-input"
+            />
+            <label for="subscribe" class="checkbox-label">
+              Запомнить меня
+            </label>
+          </div>
+          <div class="form-btn-right">
+            <button type="button" class="form-forget-password">
+              Забыли пароль?
+            </button>
+          </div>
+          <button type="submit" class="form-enter form-group--big">
+            Войти
+          </button>
+          <div class="form-btn-center form-group--big">
+            <button type="button" class="form-new-account">
+              Нет аккаунта? Создать профиль
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
